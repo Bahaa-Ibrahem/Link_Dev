@@ -1,0 +1,49 @@
+<div class="news-list">
+    <div class="row search-section">
+        <div class="col-sm-7">
+            <h2>news</h2>
+        </div>
+        <div class="col-sm-5">
+            <h6>Filter by:</h6>
+            <div class="d-flex">
+                <mat-form-field appearance="fill" style="margin-right: 10px;">
+                    <mat-label>By Date From</mat-label>
+                    <mat-select name="favorite">
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="2">2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="margin-right: 10px;">
+                    <mat-label>By Date To</mat-label>
+                    <mat-select name="favorite">
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="2">2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <input type="text" class="form-control" placeholder="Keyword">
+            </div>
+        </div>
+    </div>
+    <div class="row card-section">
+        <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let new of news">
+            <div class="card mb-2">
+                <div class="card-body news-list">
+                    <div class="text-center grow-2 pt-3 m-auto">
+                        <img [src]="new.urlToImage == 'https://www.torquenews.com/sites/default/files/styles/news/public/images/2022_subaru_forester_outback_crosstrek_sales_drop.jpg' ? 'https://s.yimg.com/ny/api/res/1.2/jxbcNKVwf3bZMyrKEVDnDw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTUyOTtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/tfRXZ0QhCYKpHeaO6NwpjQ--~B/aD01MzQxO3c9NzEyMjthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/insider_articles_922/b178410cb48565279fb51732d67ac3b5' : new.urlToImage"
+                            class="img-card w100 img" alt="Loading...">
+                    </div>
+                    <h5 class="text-center clickable" style="min-height: 67px;" [routerLink]="['/new',new.id]">{{new.title | cuteText: 60}}
+                    </h5>
+                    <div class="last-section">
+                        <span>{{new.published}}</span>
+                        <ul>
+                            <li class="mx-2"><i class="fa-regular fa-heart fa-xl"></i></li>
+                            <li><i class="fa-solid fa-share-nodes fa-xl"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,36 @@
+.news-list {
+    // background-color: var(--theme-background);
+    .search-section {
+        background-color: transparent;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        h6, h2 {
+            color: var(--theme-color);
+        }
+        input {
+            width: initial;
+            display: inline-block;
+            width: initial;
+            display: inline-block;
+            background-color: transparent;
+            border-radius: 2rem;
+            border: 1px solid;
+            padding: 0 8px!important;
+        }
+    }
+
+    .card-section {
+        background-color: white;
+        padding: 20px;
+    
+        .last-section {
+            display: flex;
+            justify-content: space-between;
+            color: #B27208;
+            ul {
+                list-style: none;
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.home {
+    color: var(--theme-color);
+
+    .first-section {
+        height: 531px;
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 230px;
+            height: 230px;
+            margin: 100px 20px;
+            position: relative;
+            h1 {
+                font-weight: 300;
+                font-size: 4rem;
+            }
+            i {
+                color: #B27208;
+            }
+            span {
+                position: absolute;
+                bottom: 35px;
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+        }
+        
+        .samll-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            span {
+                margin-top: -10px;
+            }
+            i {
+                position: absolute;
+                bottom: 3px;
+                color: #B27208;
+            }
+        }  
+    }
+
+    .second-section {
+        background-color: rgba(25, 63, 61,0.9);
+        position: relative;
+        h2 {
+            transform: rotate(270deg);
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+        }
+        .menus {
+            display: flex;
+            justify-content: space-around;
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    .third-section {
+        background-color: rgba(25, 63, 61,0.5);
+        position: relative;
+        h2 {
+            transform: rotate(270deg);
+            position: absolute;
+            bottom: 50%;
+        }
+ 
+        .carsoul {
+            background-color: #EFEEEE;
+            .more-link {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 40px;
+                margin-right: 70px;
+                margin-bottom: 20px;
+                color: rgb(25, 63, 61);
+            } 
+            .img-card {
+                max-width: 250px;
+                min-width: 250px;
+                height: 200px;
+            }
+            .last-section {
+                display: flex;
+                justify-content: space-between;
+                color: #B27208;
+                ul {
+                    list-style: none;
+                    display: flex;
+                }
+            }
+        }
+    }
+}

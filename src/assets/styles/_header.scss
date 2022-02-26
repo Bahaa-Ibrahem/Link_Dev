@@ -1,10 +1,6 @@
 .header {
-    color: #fff;
-    background-image: url('../images//banar\ bg.png');
-    background-color: #193F3D;
-    height: 500px;
+    color: var(--theme-color);
     width: 100%;
-    background-size: cover;
     .log {
         display: block;
         float: right;
@@ -25,11 +21,11 @@
         border-radius: 2rem;
         background-color: transparent;
         border-color: #ccc;
-        color: #fff;
+        color: var(--theme-color);
     }
     .lang {
         background-color: transparent;
         border: none;
-        color: #fff;
+        color: var(--theme-color);
     }
 }

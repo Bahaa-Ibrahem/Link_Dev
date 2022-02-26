@@ -13,6 +13,87 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-image: url('../images//banar\ bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.row {
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+
+.card {
+  // color: var(--theme-color);
+  color: black;
+  width: -webkit-fill-available;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #EFEEEE!important;
+  background-clip: border-box;
+  border: none!important;
+  border-radius: 0.25rem;
+  margin: 0 10px;
+  border: none;
+  border-radius: 0.5rem;
+  .card-body {
+    padding: 1rem 0!important;
+    &.news-list {
+      padding: 1rem!important;
+    }
+    .img-card {
+      max-width: 250px;
+      min-width: 250px;
+      height: 200px;
+    }
+    h5 {
+      color: rgb(25, 63, 61);
+    }
+  }
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0;
+  border-radius: 2rem;
+  border: 1px solid;
+  padding: 0 8px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 4px 4px 0 0;
+  padding: 0!important;
+  .mat-form-field-infix {
+    padding: 0!important;
+    width: 110px;
+  }
+}
+
+.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+  transform: translateY(-25%)!important;
+}
+
+.mat-form-field-underline {
+  display: none;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: transparent!important;
+}
+
+.p-carousel-indicators {
+  // display: none!important;
+}
+
+.p-carousel-prev, .p-carousel-next {
+  // display: none!important;
+}
+
+.p-carousel-indicator > button {
+  // visibility: hidden;
 }
 
 .clickable {

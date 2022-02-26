@@ -1,29 +1,30 @@
 <div class="header">
     <div class="row border-bottom d-flex align-items-stretch">
-        <div class="col-2 p-3 border-right">
+        <div class="col-sm-2 p-3 border-right">
             <img class="log" src="../../../assets/images/LinkDev_white.png" alt="">
         </div>
-        <div class="col-6 p-3 border-right d-flex align-items-center justify-content-end">
+        <div class="col-sm-6 p-3 border-right d-flex align-items-center justify-content-end">
             <ul class="clickable">
                 <li class="mr-5">
-                    <i [ngStyle]="{'color' : dark ? 'black' : 'white'}" (click)="dark = !dark" class="fa-solid fa-circle-half-stroke"></i>            
-        
+                    <i [ngStyle]="{'color' : dark ? 'black' : 'white'}" (click)="dark = !dark"
+                        class="fa-solid fa-circle-half-stroke"></i>
+
                 </li>
                 <li>
                     <i (click)="samllFont = !samllFont" class="fa-duotone fa-a"></i>
-        
+
                 </li>
                 <li>
                     <i (click)="meduimFont = !meduimFont" class="fa-duotone fa-a fa-lg"></i>
-        
+
                 </li>
                 <li>
                     <i (click)="largFont = !largFont" class="fa-duotone fa-a fa-xl"></i>
-        
+
                 </li>
-            </ul>          
+            </ul>
         </div>
-        <div class="col-3 p-3 border-right d-flex align-items-center justify-content-around">
+        <div class="col-sm-3 p-3 border-right d-flex align-items-center justify-content-around">
             <i class="fa-solid fa-magnifying-glass clickable"></i>
             <select class="clickable lang">
                 <option value="en" selected>EN</option>
@@ -31,8 +32,8 @@
             </select>
             <button class="btn sign-btn">Sign In</button>
         </div>
-        <div class="col-1 p-3 d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-align-right fa-xl clickable"></i>        
+        <div class="col-sm-1 p-3 d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-align-right fa-xl clickable"></i>
         </div>
     </div>
 </div>
