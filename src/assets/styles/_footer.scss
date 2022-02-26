@@ -1,0 +1,32 @@
+.footer {
+    background-color: #193F3D;
+    color: #fff;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 3px;
+        }
+    }
+    
+    .links {
+        display: flex;
+        li:first-child {
+            margin-right: 50px;
+        }
+    }
+
+    .send-btn {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #ccc;
+        border-radius: initial;
+        padding: 3px 25px;
+    }
+
+    input {
+        background-color: #EFEEEE;
+        border: none;
+    }
+}

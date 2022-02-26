@@ -1,0 +1,52 @@
+// Themes
+html {
+  background: var(--theme-background);
+  color: var(--theme-color);
+  transition: all ease-in-out 400ms;
+  font-family: $font-family;
+  font-size: var(--font-size);
+}
+
+// Fonts
+
+// for common styles
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.border-right {
+  border: 1px solid #ccc {
+    top: none;
+    bottom: none;
+    left: none;
+  };
+}
+
+.border-left {
+  border: 1px solid #ccc {
+    top: none;
+    bottom: none;
+    right: none;
+  };
+}
+
+.border-bottom {
+  border: 1px solid #ccc {
+    top: none;
+    left: none;
+    right: none;
+  };
+}

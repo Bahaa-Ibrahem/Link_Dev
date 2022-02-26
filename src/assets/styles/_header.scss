@@ -1,0 +1,35 @@
+.header {
+    color: #fff;
+    background-image: url('../images//banar\ bg.png');
+    background-color: #193F3D;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    .log {
+        display: block;
+        float: right;
+        width: 100px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;  
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+            padding: 5px;
+        }  
+    }
+    .sign-btn {
+        border-radius: 2rem;
+        background-color: transparent;
+        border-color: #ccc;
+        color: #fff;
+    }
+    .lang {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+}
