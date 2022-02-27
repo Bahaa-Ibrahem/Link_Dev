@@ -13,7 +13,7 @@ export class NewsDetialsComponent implements OnInit {
   new: any;
   news: News[] = [];
   responsiveOptions;
-  
+
   constructor(private activeRoter: ActivatedRoute, private newsSrv: NewsService) {
     this.responsiveOptions = [
       {
@@ -45,14 +45,12 @@ export class NewsDetialsComponent implements OnInit {
   getNewsById() {
     this.newsSrv.getNewById(this.id).subscribe((data) => {
       this.new = data;
-      console.log(this.new);
     });
   }
 
   getNews() {
     this.newsSrv.getNews().subscribe((data:any) => {
       this.news = data.News;
-      console.log(this.news[0].id);
     })
   }
 }
