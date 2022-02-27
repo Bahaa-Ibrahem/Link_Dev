@@ -20,7 +20,8 @@
     }
 
     .card-section {
-        background-color: white;
+        background-color: var(--theme-background);
+        color: var(--theme-color);        
         padding: 20px;
     
         .last-section {

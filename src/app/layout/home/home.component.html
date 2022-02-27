@@ -96,13 +96,13 @@
                 <span class="mx-2">More</span>
                 <i class="fa-solid fa-circle-arrow-right"></i>
             </div>
-            <p-carousel [value]="news" [numVisible]="4" [numScroll]="1">
+            <p-carousel [value]="news" [numVisible]="4" [numScroll]="4">
                 <ng-template let-news pTemplate="item">
                     <div class="card">
                         <div class="card-body">
                             <div>
                                 <div class="text-center grow-2 pb-3 m-auto">
-                                    <img [src]="news.urlToImage" class="img-card w100 img" alt="">
+                                    <img [src]="news.urlToImage == 'https://www.torquenews.com/sites/default/files/styles/news/public/images/2022_subaru_forester_outback_crosstrek_sales_drop.jpg' ? 'https://s.yimg.com/ny/api/res/1.2/jxbcNKVwf3bZMyrKEVDnDw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTUyOTtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/tfRXZ0QhCYKpHeaO6NwpjQ--~B/aD01MzQxO3c9NzEyMjthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/insider_articles_922/b178410cb48565279fb51732d67ac3b5' : news.urlToImage" class="img-card w100 img" alt="">
                                 </div>
                                 <h5>{{news.title}}</h5>
                                 <div class="last-section">

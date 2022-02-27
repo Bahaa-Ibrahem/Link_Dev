@@ -11,4 +11,8 @@ export class NewsService {
   getNews() {
     return this._http.get("https://api.npoint.io/96363b7b60639fdd6e7d");
   }
+
+  getNewById(id: number) {
+    return this._http.get(`https://api.npoint.io/96363b7b60639fdd6e7d/News/${id}`);
+  }
 }

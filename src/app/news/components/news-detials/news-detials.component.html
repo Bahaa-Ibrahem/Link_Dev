@@ -1,1 +1,58 @@
-<p>news-detials works!</p>
+<div class="row card-section">
+   <ng-container *ngIf="new">
+       <div class="row search-section">
+        <div class="col-sm-12">
+            <h2>News</h2>
+        </div>
+       </div>
+    <div class="card-section">
+        <div class="row">
+            <div class="col-sm-6">
+                <img [src]="new.urlToImage == 'https://www.torquenews.com/sites/default/files/styles/news/public/images/2022_subaru_forester_outback_crosstrek_sales_drop.jpg' ? 'https://s.yimg.com/ny/api/res/1.2/jxbcNKVwf3bZMyrKEVDnDw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTUyOTtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/tfRXZ0QhCYKpHeaO6NwpjQ--~B/aD01MzQxO3c9NzEyMjthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/insider_articles_922/b178410cb48565279fb51732d67ac3b5' : new.urlToImage"
+                class="img-detials" alt="Loading...">
+            </div>
+            <div class="col-sm-6">
+                <h2>{{new.title | cuteText: 60}}</h2>
+                <div class="last-section">
+                    <span>{{new.published}}</span>
+                    <ul>
+                        <li class="mx-2"><i class="fa-regular fa-heart fa-xl"></i></li>
+                        <li><i class="fa-solid fa-share-nodes fa-xl"></i></li>
+                    </ul>
+                </div>
+                <h5>{{new.content}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h5>{{new.description}}</h5>
+            </div>
+        </div>
+    </div>
+
+   </ng-container>
+    <div class="row">
+        <p-carousel [value]="news" [numVisible]="4" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions" autoplay="true">
+            <ng-template let-news pTemplate="item">
+                <div class="card news-details">
+                    <div class="card-body">
+                        <div>
+                            <div class="text-center grow-2 pb-3 m-auto">
+                                <img [src]="news.urlToImage == 'https://www.torquenews.com/sites/default/files/styles/news/public/images/2022_subaru_forester_outback_crosstrek_sales_drop.jpg' ? 'https://s.yimg.com/ny/api/res/1.2/jxbcNKVwf3bZMyrKEVDnDw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTUyOTtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/tfRXZ0QhCYKpHeaO6NwpjQ--~B/aD01MzQxO3c9NzEyMjthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/insider_articles_922/b178410cb48565279fb51732d67ac3b5' : news.urlToImage"
+                                class="img-card w100 img" alt="Loading...">                            </div>
+                                <h5 class="text-center clickable" style="min-height: 67px;" [routerLink]="['/news/new',news.id]">{{news.title | cuteText: 60}}
+                                </h5>                            
+                                <div class="last-section">
+                                <span>{{news.published}}</span>
+                                <ul>
+                                    <li class="mx-2"><i class="fa-regular fa-heart fa-xl"></i></li>
+                                    <li><i class="fa-solid fa-share-nodes fa-xl"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

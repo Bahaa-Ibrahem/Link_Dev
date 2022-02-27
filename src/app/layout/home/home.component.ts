@@ -9,11 +9,30 @@ import { NewsService } from 'src/app/services/news.service';
   styleUrls: ['./home.component.scss']
 })
 
-
 export class HomeComponent implements OnInit {
   num: number = 1;
   news: News[] = [];
-  constructor(private newsSrv: NewsService) { }
+  responsiveOptions;
+  
+  constructor(private newsSrv: NewsService) {
+    this.responsiveOptions = [
+      {
+          breakpoint: '1024px',
+          numVisible: 3,
+          numScroll: 3
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 2,
+          numScroll: 2
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1,
+          numScroll: 1
+      }
+  ];
+  }
 
   ngOnInit(): void {
     this.getNews();

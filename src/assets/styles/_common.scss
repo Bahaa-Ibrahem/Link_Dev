@@ -40,20 +40,27 @@ body {
   margin: 0 10px;
   border: none;
   border-radius: 0.5rem;
-  .card-body {
-    padding: 1rem 0!important;
-    &.news-list {
-      padding: 1rem!important;
-    }
-    .img-card {
-      max-width: 250px;
-      min-width: 250px;
-      height: 200px;
-    }
-    h5 {
-      color: rgb(25, 63, 61);
-    }
+  &.news-list {
+    background-color: transparent!important;
   }
+  &.news-details {
+    padding: 1rem 2rem!important;
+  }    
+
+.card-body {
+  padding: 1rem 0!important;
+  &.news-list {
+    padding: 1rem!important;
+  }
+  .img-card {
+    max-width: 250px;
+    min-width: 250px;
+    height: 200px;
+  }
+  h5 {
+    color: rgb(25, 63, 61);
+  }
+}
 }
 
 .mat-form-field-wrapper {
@@ -84,16 +91,20 @@ body {
   background-color: transparent!important;
 }
 
-.p-carousel-indicators {
-  // display: none!important;
-}
+// .p-carousel-indicators {
+//   display: none!important;
+// }
 
-.p-carousel-prev, .p-carousel-next {
-  // display: none!important;
-}
+// .p-carousel-prev, .p-carousel-next {
+//   display: none!important;
+// }
 
-.p-carousel-indicator > button {
-  // visibility: hidden;
+// .p-carousel-indicator > button {
+//   visibility: hidden;
+// }
+
+.p-carousel-items-container {
+  transform: translate(0)!important;
 }
 
 .clickable {

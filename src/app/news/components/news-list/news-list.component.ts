@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Data } from '@angular/router';
 import { NewsService } from 'src/app/services/news.service';
 import { News } from '../../models/news.model';
 
@@ -10,8 +10,9 @@ import { News } from '../../models/news.model';
 })
 export class NewsListComponent implements OnInit {
   news: News[] = [];
-
-  // news: Observable<NewsModule>;
+  newsOrignal: News[] = [];
+  keyword: string = '';
+  dataDate: Date = new Date;
 
   constructor(private newsSrv: NewsService) { }
 
@@ -22,7 +23,13 @@ export class NewsListComponent implements OnInit {
   getNews() {
     this.newsSrv.getNews().subscribe((data:any) => {
       this.news = data.News;
-      console.log(this.news[0].id);
+      this.newsOrignal = this.news;
     })
+  }
+
+  onSearchChange() {
+    this.news = this.newsOrignal.filter((news => {
+     return news.title.toLowerCase().includes(this.keyword.toLowerCase());
+    }));
   }
 }

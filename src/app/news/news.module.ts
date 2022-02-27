@@ -6,7 +6,7 @@ import { NewsListComponent } from './components/news-list/news-list.component';
 import { NewsDetialsComponent } from './components/news-detials/news-detials.component';
 import { cuteTextPipe } from '../pipes/cute-text.pipe';
 import { MaterialModule } from '../material.module';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { MaterialModule } from '../material.module';
   imports: [
     CommonModule,
     NewsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [
     SlicePipe

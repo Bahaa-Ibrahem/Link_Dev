@@ -1,0 +1,25 @@
+.card-section {
+    padding: 20px 0;
+    .search-section {
+        color: var(--theme-color);
+    }
+
+    .card-section {
+        background-color: var(--theme-background);
+        color: var(--theme-color);
+        .img-detials {
+            width: 100%;
+        }
+    }
+
+    .last-section {
+        display: flex;
+        justify-content: space-between;
+        color: #B27208;
+        ul {
+            list-style: none;
+            display: flex;
+        }
+    }
+  
+}
